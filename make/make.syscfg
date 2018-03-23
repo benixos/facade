@@ -167,11 +167,13 @@ $(warning LIBGCC32_PATH = $(LIBGCC32_PATH))
 endif
 
 # print some info
-$(warning ARCH = $(ARCH))
+$(warning ARCH     = $(ARCH))
 $(warning PLATFORM = $(PLATFORM))
-$(warning TARGET = $(TARGET))
+$(warning TARGET   = $(TARGET))
 
 # figure out where the build dir will be
-BUILD_DIR = build/$(TARGET)
+BUILD_DIR   = build/objs.$(TARGET)
+RELEASE_DIR = build/package.$(TARGET)
+
 $(warning build dir will be $(BUILD_DIR))
 $(shell mkdir -p $(BUILD_DIR))
