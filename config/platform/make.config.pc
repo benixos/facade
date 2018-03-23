@@ -1,0 +1,4 @@
+
+
+$(FINAL) : $(LIBS) $(CMDS)
+	touch $(FINAL) 

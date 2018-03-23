@@ -1,6 +1,6 @@
-MY_TARGET := $(LIBS_BUILD_DIR)/libhttp.so
-MY_STATIC_TARGET := $(LIBS_BUILD_DIR)/libhttp.a
-MY_TARGETDIR := $(LIBS_BUILD_DIR)/libhttp
+MY_TARGET        := $(LIBS_RELEASE_DIR)/libhttp.so
+MY_STATIC_TARGET := $(LIBS_RELEASE_DIR)/libhttp.a
+MY_TARGETDIR     := $(LIBS_DIR)/libhttp
 
 MY_SRCDIR := $(LIBS_DIR)/libhttp
 LIBDEV_DIR := $(MY_SRCDIR)

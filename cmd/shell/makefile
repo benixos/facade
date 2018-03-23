@@ -1,7 +1,8 @@
 #cmd makefile
 MY_TARGETDIR := $(CMD_BUILD_DIR)/shell
-MY_SRCDIR := $(CMD_DIR)/shell
-MY_TARGET :=  $(MY_TARGETDIR)/shell
+MY_SRCDIR    := $(CMD_DIR)/shell
+MY_TARGET    := $(CMD_RELEASE_DIR)/shell
+
 ifeq ($(call FINDINLIST,$(MY_TARGET),$(ALL)),1)
 
 MY_SRCS := \
